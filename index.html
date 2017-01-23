@@ -4,11 +4,23 @@
 <head>
 	<meta charset="utf-8">
 	<title>Aloha Apparel</title>
+<!-- ******************* FONTS **************** -->
 	 <script src="https://use.fontawesome.com/5b03f1e1fd.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:200i,400" rel="stylesheet">
+<!-- ****************** CSS ******************* -->
+
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="owl.theme.default.css"> -->
+	<!-- <link rel="stylesheet" type="text/css" href="owl.theme.default.min.css"> -->
+    <!-- ********* JAVASCRIPT/JQUERY ************ -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script type="text/javascript" src="main.js"></script>
+
+  
+<!-- **************** OWL CAROUSEL ******************* -->
+
 </head>
 
 <body>
@@ -27,6 +39,7 @@
 				</ul>
 			</div>
 			<div class="flex-item cart">
+				<div id="item-quantity">test</div>
 				<img class="header-image cart-image" src="assets/images/cart-icon.svg">
 			</div>
 		</div>
@@ -82,12 +95,13 @@
 	
 	<section class="products section-format clearfix">
 		<h3 class="section-title font-playfair grey-text">Most-Loved <span class="bold unstyled">Products</span></h3>
-			<div class="product-roll">
+			<div class="owl-carousel owl-theme product-roll">
 				<div class="productDiv">
 					<img class="item-pic" src="assets/images/stretch-knit-dress.jpg" alt="Stretch Knit Dress">
                      <p class="light-grey-text small-text font-raleway uppercase">Dresses</p>
                      <h4 class="red-text font-playfair">Stretch Knit Dress</h4>
                      <p class="light-grey-text price font-raleway">$169.00</p>
+                     <button id="addToCart" class="add-to-cart">Add to Cart</button>
                 </div>
 
                 <div class="productDiv">
@@ -95,6 +109,7 @@
                 	<p class="light-grey-text small-text font-raleway uppercase">Shirts</p>
                     <h4 class="red-text font-playfair">Cotton Blue Shirt</h4>
                     <p class="light-grey-text price font-raleway">$89.00</p>
+                     <button id="addToCart" class="add-to-cart">Add to Cart</button>
                 </div>
 
                 <div class="productDiv">
@@ -102,6 +117,7 @@
                 	<p class="light-grey-text small-text font-raleway uppercase">Dresses</p>
                     <h4 class="red-text font-playfair">Checked Stretch Dress</h4>
                     <p class="light-grey-text price font-raleway">$129.00</p>
+                     <button id="addToCart" class="add-to-cart">Add to Cart</button>
                 </div>
 
                 <div class="productDiv">
@@ -109,6 +125,7 @@
                 	<p class="light-grey-text small-text font-raleway uppercase">Bags</p>
                     <h4 class="red-text font-playfair">Blue Hipster Backpack</h4>
                     <p class="light-grey-text price font-raleway">$69.00</p>
+                     <button id="addToCart" class="add-to-cart">Add to Cart</button>
                 </div>
 
                 <div class="productDiv">
@@ -116,6 +133,7 @@
                 	<p class="light-grey-text small-text font-raleway uppercase">Dresses</p>
                     <h4 class="red-text font-playfair">Blue Silk Dress</h4>
                     <p class="light-grey-text price font-raleway">$119.00</p>
+                     <button id="addToCart" class="add-to-cart">Add to Cart</button>
                 </div>
 
                 <div class="productDiv">
@@ -123,6 +141,7 @@
                 	<p class="light-grey-text small-text font-raleway uppercase">Shorts</p>
                     <h4 class="red-text font-playfair">Denim Overall Shorts</h4>
                     <p class="light-grey-text price font-raleway">$99.00</p>
+                     <button id="addToCart" class="add-to-cart">Add to Cart</button>
                 </div>
 
                 <div class="productDiv">
@@ -130,6 +149,7 @@
                 	<p class="light-grey-text small-text font-raleway uppercase">Shirts</p>
                     <h4 class="red-text font-playfair">Cotton Yellow Shirt</h4>
                     <p class="light-grey-text price font-raleway">$49.00</p>
+                     <button id="addToCart" class="add-to-cart">Add to Cart</button>
                 </div>
 
                 <div class="productDiv">
@@ -137,6 +157,7 @@
                 	<p class="light-grey-text small-text font-raleway uppercase">Dresses</p>
                     <h4 class="red-text font-playfair">Pink Dotted Dress</h4>
                     <p class="light-grey-text price font-raleway">$129.00</p>
+                     <button id="addToCart" class="add-to-cart">Add to Cart</button>
                 </div>
 
 			</div>
@@ -183,30 +204,9 @@
 		</ul>
 	</div>
 
+<!-- <script type="text/javascript" src="owl.carousel.min.js"></script> -->
+
 </footer>
-
-</body>
-
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </body>
 
