@@ -110,18 +110,22 @@ ul.nav {
 .cart {
 	display: flex;
 	justify-content: flex-end;
+	position: relative;
 }
 
-#item-quantity {
-	border-radius: 80px;
+#cartQuantity {
+    border-radius: 80px;
     background-color: red;
     position: absolute;
-    top: 35px;
-    right: 30px;
+    top: 5px;
+    right: 5px;
     z-index: 1;
     padding: 10px;
     color: white;
-    display: none;
+     display: none; 
+    width: 25px;
+    height: 25px;
+    font-size: 2rem;
 }
 
 
@@ -248,6 +252,10 @@ h5 {
     border-radius: 20px;
 }
 
+.owl-theme .owl-nav [class*=owl-]{
+	display: none !important;
+}
+
 /*************SUBSCRIBE****************/
 
 .signup {
@@ -347,10 +355,42 @@ ul.social-icons {
 	line-height: 1.9;
 	}
 
-	.navbar {
-	order: 2;
+.flex-container {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	margin-top: 3%;
 }
 
+.header-image {
+	height: 70%;
+	position: relative;
+}
+/*	.navbar {
+	order: 2;
+}*/
+
+.cart {
+	order: 3;
+}
+
+ul.nav {
+	border: none;
+}
+
+#cartQuantity {
+    top: -5px;
+    right: -8px;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 2rem;
+}
+
+.menu-item {
+	font-size: 1.5rem;
+	padding: 3px;
+}
 	.rectangle {
 	width: 49%;
 	height: 25vh;
@@ -367,9 +407,15 @@ ul.social-icons {
 	margin-top: 22%;
 }
 
-	.product-roll {
+h5 {
+	font-size: 2.5rem;
+	text-align: center;
+	margin-top: 45%;
+}
+
+	/*.product-roll {
 		display: block;
-	}
+	}*/
 	.above {
 		float: left;
 		padding: 10px;
@@ -378,11 +424,15 @@ ul.social-icons {
 		padding: 10px;
 	}
 	
-	.item-pic {
+	/*.item-pic {
 		height: inherit;
-	}
+	}*/
 	.red-text {
 		font-size: 25px;
+	}
+
+	.signup {
+		background-size: 200%;
 	}
 
 	.sub-form {
@@ -420,8 +470,81 @@ ul.social-icons {
 		display: inline;
 	}
 
+/***************DESKTOP****************************/
+
+@media only screen and (min-device-width: 1050px) {
+
+h1 {
+	font-size: 3rem;
+}
+
+h2 {
+	font-size: 1rem;
+}
+
+.margin-bottom {
+	margin-bottom: 2%;
+}
+	.flex-container {
+		height: 15vh;
+	}
+
+	.header-image {
+	padding: 15px;
+	height: 60%;
+	position: relative;
+}
+
+.nav {
+	border: none;
+}
+
+#cartQuantity {
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    width: 10px;
+    height: 10px;
+    font-size: 1.5rem;
+}
+
+.rectangle {
+	width: 49%;
+	height: 40vh;
+	margin: 1% 0%;
+}
+
+.square {
+	width: 24%;
+	height: 40vh;
+	margin: 1% 0%;
+}
 
 
+.signup {
+	height: 35vh;
+	background-size: 100%;
+}
 
+.signup-title {
+	margin: 0 auto;
+	font-size: 2.5rem;
+}
 
+.email-form {
+	padding: 8px 40px;
+	font-size: 1rem;
+}
 
+.email-form:active {
+	border: none;
+}
+
+.subscribe {
+	padding: 5px 40px;
+	font-size: 1rem;
+}
+
+.sub-form {
+	margin: 0 auto;
+}
