@@ -16,34 +16,19 @@ $('.owl-carousel').owlCarousel({
             items:4
         }
     }
-})
+});
 
+
+
+var cartQuantity = 0;
 
 $(".addToCart").on("click", function (){
-    var inputField = parseInt($("#cartQuantity").val()); 
-    // increaSE VALUE BY WHEN CLICK THE BUTTON            
-     $("#cartQuantity").val(inputField + 1);      
-     });      
-     $(".addToCart").click(function(){ 
-     //shows the input for cart quantities     
-     $("#cartQuantity").show(); 
- })
+    cartQuantity += 1;
+    console.log("i work");
+    $(".cart-count").html(cartQuantity);                   
+    $("#cart-quantity").show(); 
  });
 
+});
 
-// var addToCart =document.getElementById("addToCart");
-// addToCart.addEventListener("click", changeCartQuantity,false);
-// function changeCartQuantity() {
-//             var itemQuantity = 0;
-//             // console.log("I am in the function");
-//             // is quantitiy zero?       
-//                 if (itemQuantity == 0) {
-//                     // if yes, then add one to quantity
-//                     itemQuantity = itemQuantity + 1;
-//                 } else {
-//                     // if no, then add one to exisiting quantity
-//                     itemQuantity = itemQuantity + 1;
-//                 }
-//                     // then display new quantity
-//                 document.getElementById("item-quantity").innerHTML = itemQuantity;
-// // }
+
