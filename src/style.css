@@ -401,6 +401,10 @@ ul.social-icons {
 	margin-top: 3%;
 }
 
+.navbar {
+	border: none;
+}
+
 .header-image {
 	height: 4em;
 	position: relative;
@@ -408,8 +412,8 @@ ul.social-icons {
 
 .cart {
 	order: 3;
-	height: 4em;
-	background-size: 70%;
+	height: 4.5em;
+	background-size: 68%;
 }
 
 ul.nav {
@@ -417,7 +421,6 @@ ul.nav {
 	list-style: none;
 	justify-content: center;
 	width: 100%;
-	border: none;
 }
 
 #cartQuantity {
@@ -430,8 +433,8 @@ ul.nav {
 }
 
 .menu-item {
-	font-size: 1.5rem;
-	padding: 3px;
+	font-size: 1.5em;
+	padding: 0 10px;
 }
 
 /******************* BANNER **********************/
@@ -455,13 +458,13 @@ ul.nav {
 
 .rectangle {
 	width: 49%;
-	height: 25vh;
+	height: 30vh;
 	margin: 1% 0%;
 }
 
 .square {
 	width: 24%;
-	height: 25vh;
+	height: 30vh;
 	margin: 1% 0%;
 }
 
@@ -470,14 +473,15 @@ ul.nav {
 }
 
 h5 {
-	font-size: 2.5rem;
+	font-size: 2.2rem;
 	text-align: center;
 	margin-top: 45%;
 }
 
-	/*.product-roll {
-		display: block;
-	}*/
+.product-title {
+	font-size: 2em;
+}
+
 	.above {
 		float: left;
 		padding: 10px;
@@ -486,19 +490,12 @@ h5 {
 		padding: 10px;
 	}
 	
-	/*.item-pic {
-		height: inherit;
-	}*/
-	.red-text {
-		font-size: 25px;
-	}
-
 	.signup {
 		background-size: 200%;
 	}
 
 	.sub-form {
-		width: 70%;
+		width: 75%;
 	}
 
 	.footer-section-left {
@@ -508,15 +505,15 @@ h5 {
 		float: right;
 	}
 	.info-text {
-		font-size: 22px;
+		font-size: 1em;
 	}
 	.contact-text {
 		padding: 8px 0px;
-		font-size: 22px;
+		font-size: 1em;
 	}
 	.icon {
 		float: none;
-		font-size: 20px;
+		font-size: 1em;
 		text-align: left;
 		padding: 5px 15px;	
 	}
