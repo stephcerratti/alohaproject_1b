@@ -127,12 +127,13 @@ ul.nav {
     text-align: center;
 }
 
-ul .menu-item {
+
+li a {
 	color: red;
 	text-decoration: none;
 }
 
-ul .menu-item:visted {
+li a:visted {
 	color: red;
 }
 
@@ -359,10 +360,6 @@ h5 {
 .icon {
 	text-align: center;
 	padding: 5px;
-}
-
-a:visited {
-	color: white;
 }
 
 ul.social-icons {
